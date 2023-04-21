@@ -94,7 +94,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Only numbers are accepted ");
         } catch (Exception e) {
             log.error("Error occurred " + e.getMessage());
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Only numbers are accepted");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Only numbers are accepted here");
         }
       /*  try {
             userService.deleteUserById(id).;
@@ -105,7 +105,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Unable to delete the user");
         }*/
     }
-
+//Method to create new users in the system.
     @GetMapping("/users1")
     public ResponseEntity<String> createUser() {
         try {
